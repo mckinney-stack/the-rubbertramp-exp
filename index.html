@@ -1,0 +1,420 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+  <title>The RubberTramp Exp.</title>
+
+  <style>
+      * {
+          letter-spacing: 0.03em;
+      }
+
+      p {
+          text-align: justify;
+          font-family: 'late', sans-serif;
+          font-size: 15px;
+      }
+
+      header{
+          background: url(img/brina-blum-IwSyGhJoMRs-unsplash.jpg);
+          background-size: cover;
+          background-position: center;
+          min-height: 700px;
+      }
+      .section{
+          padding-top: 4vw;
+          padding-bottom: 4vw;
+      }
+      .tabs .indicator{
+          background-color:teal;
+      }
+      .tabs .tab a:focus, .tabs .tab a:focus.active{
+          background: transparent;
+      }
+      @media screen and (max-width: 670px){
+          header{
+              min-height: 500px;
+          }
+      }
+
+      .nav-headings {
+          font-family: 'Bebas Neue', cursive;
+          font-size: 24px;
+          position: relative;
+          top: 4px;
+          color: rgb(218, 218, 218);
+          font-weight: 400;
+          transition: all 0.4s ease;
+          border-bottom: 2px solid transparent;
+          letter-spacing: 0.07em;
+      }
+
+      .nav-headings:hover {
+          color: rgba(255, 166, 0, 0.884);
+          border-bottom: 2px solid rgba(255, 166, 0, 0.884);
+      }
+
+      .sidenav-headings {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px !important;
+        transition: all 0.4s ease;
+      }
+
+      .sidenav-headings:hover {
+        color:rgba(255, 166, 0, 0.897);
+        opacity: 0.8;
+      }
+
+      .parallax-container {
+          height: 300px; 
+      }
+
+      .main-heading {
+        font-family: 'Lobster', cursive;
+        position: relative;
+        font-size: 88px;
+        top: 10px;
+        left: 9px;
+        color: rgb(87, 87, 87);
+        text-shadow: 2px 2px rgba(255, 166, 0, 0.712);
+      }
+
+      .small-title {
+        font-family: 'Lobster', cursive;
+        padding-top: 0px;
+        margin-top: 0px;
+        position: relative;
+        top: 20px;
+        color: rgb(87, 87, 87);
+        font-size: 26px;
+        text-shadow: 1px 1px rgba(255, 166, 0, 0.712);
+      }
+
+      .slogan-text {
+        color: rgb(87, 87, 87);
+        font-size: 20px;
+        position: relative;
+        left: 4%;
+        bottom: 10px;
+        letter-spacing: 0.09em;
+      }
+
+      .sub-headings {
+          font-family: 'Lobster', cursive;
+          margin-bottom: 10px;
+          position: relative;
+          bottom: 20px;
+          color: rgb(87, 87, 87);
+          text-shadow: 1px 1px rgba(255, 166, 0, 0.712);
+          font-size: 60px;
+      }
+
+      .about-sub-headings {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 48px;
+        color: rgba(0, 134, 134, 0.753);
+      }
+
+      .services-sub-headings {
+        color:rgb(192, 192, 192) !important;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 25px !important;
+        overflow: visible !important;
+      }
+
+      .tabs .tab a{
+            color:rgba(0, 134, 134, 0.753);
+            background-color: rgb(255, 255, 251);
+        }
+
+        .tabs .tab a:hover {
+            background-color:#eee;
+            color:rgba(255, 166, 0, 0.884) !important;
+            transition: all 0.3s ease;
+        } /*Text color on hover*/
+
+        .tabs .indicator {
+            background-color:rgba(0, 134, 134, 0.753);
+        } /*Color of underline*/
+
+      .services-focus-headings {
+        color:rgba(0, 134, 134, 0.753) !important;
+        font-size: 40px;
+        font-family: 'Bebas Neue', cursive;
+        margin-bottom: 0px;
+        margin-top: 30px;
+      }
+
+      .services-text {
+          text-align: justify;
+      }
+
+      .additional-detail-headings {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 32px;
+      }
+
+      .social-links {
+        font-size: 15px;
+        font-family: 'Lato', sans-serif;
+      }
+
+      .social-links:hover {
+          color:rgba(255, 166, 0, 0.884) !important;
+          transition: all 0.4s ease;
+        }
+
+
+  </style>
+</head>
+
+<body style="background-color: rgb(255, 255, 251);">
+
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper transparent z-depth-0">
+        <div class="container">
+            <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons" style="color: rgb(219, 219, 219);">menu</i>
+            </a>
+            <ul class="hide-on-med-and-down">
+                <li><a href="#photos" class="nav-headings">ABOUT</a></li>
+                <li><a href="#services" class="nav-headings">SERVICES</a></li>
+                <li><a href="#contact" class="nav-headings" style="margin-right: 10px;">CONTACT</a></li>
+                <li><a href="https://www.instagram.com/the_rubbertramp_exp/?hl=en" target="_blank" class="tooltipped btn-floating btn-small teal darken-1 z-depth-0" data-tooltip="This is Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a></li>
+                <li><a href="https://www.facebook.com/LawrenceCampers" target="_blank" class="tooltipped btn-floating btn-small teal darken-1 z-depth-0" data-tooltip="This is Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a></li>
+                <li><a href="https://www.youtube.com/channel/UCiOnY29jMmVoDN9n-Jz1xUw" target="_blank" class="tooltipped btn-floating btn-small teal darken-1 z-depth-0" data-tooltip="This is YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a></li>
+                <li><a href="https://www.etsy.com/uk/shop/lawrenceleathersco" target="_blank" class="tooltipped btn-floating btn-small teal darken-1 z-depth-0" data-tooltip="This is Etsy">
+                    <i class="fab fa-etsy"></i>
+                </a></li>
+            </ul>
+            <h5 class="center hide-on-med-and-up small-title">The RubberTramp Exp.</h5>
+            <ul class="sidenav grey lighten-2" id="mobile-menu">
+                <li><a href="#photos" class="sidenav-headings">ABOUT</a></li>
+                <li><a href="#services" class="sidenav-headings">SERVICES</a></li>
+                <li><a href="#contact" class="sidenav-headings">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN HEADING -->
+    <div class="container">
+        <h1 class="main-heading hide-on-small-only">The RubberTramp Exp.</h1>
+    </div>  
+
+  </header>
+
+    <div style="background-color: rgb(212, 212, 212); padding-top: 24px; padding-bottom: 70px;">
+        <h5 style="text-align: center; font-family: 'Bebas Neue', cursive; font-size: 34px; color: teal; padding-bottom: 10px;">CHECK OUT MY LATEST BUILD...</h5>
+        <iframe class="z-depth-1" width="80%" height="75%" style="position: relative; margin: auto; text-align: center; display: block; border: 0.34em solid rgb(97, 97, 97); border-radius: 3px;" src="https://www.youtube.com/embed/N8hKBNT_1cA?modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+  <!-- photo / grid -->
+  <section class="container section scrollspy" id="photos">
+      <h3 class="center sub-headings" style="bottom: 40px; padding-top: 14px;"> About. </h3>
+      <div class="row">
+          <div class="col s12 l5">
+              <img src="img/RubberTramp03.jpg" alt="" class="responsive-img materialboxed" style="border-radius: 3px;">
+          </div>
+          <div class="col s12 l6 offset-l1">
+              <h2 class=" about-sub-headings">Builds</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium fuga consequuntur asperiores eoe.</p>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l5 push-l7">
+            <img src="img/RubberTramp02.jpg" alt="" class="responsive-img materialboxed" style="border-radius: 3px;">
+        </div>
+        <div class="col s12 l5 pull-l5 right-align offset-l1">
+            <h2 class=" about-sub-headings">Rentals</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium fuga consequuntur asperiores eos.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 l5">
+            <img src="img/RubberTramp04.jpg" alt="" class="responsive-img materialboxed" style="border-radius: 3px;">
+        </div>
+        <div class="col s12 l6 offset-l1">
+            <h2 class="about-sub-headings">Consultation</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium fuga consequuntur asperiores eos.</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+      <div class="parallax">
+          <img src="img/connor-mollison-Ys1UeoLuxC0-unsplash (1).jpg" alt="" class="responsive-img materialboxed">
+      </div>
+  </div>
+
+  <!-- services / tabs -->
+  <section class="container section scrollspy" id="services">
+    <div class="row">
+        <div class="col s12 l4">
+            <h2 class="sub-headings">What I do...</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos natus necessitatibus neque suscipit perspiciatis eveniet explicabo praesentium, sunt illo esse!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos natus necessitatibus neque suscipit perspiciatis eveniet explicabo praesentium, sunt illo esse!</p>
+        </div>
+        <div class="col s12 l7 offset-l1" style="padding-top: 40px;">
+            <ul class="tabs black-text">
+                <li class="tab col s4 l4">
+                    <a href="#builds" class="services-sub-headings">Builds</a>
+                </li>
+                <li class="tab col s4 l4">
+                    <a href="#rentals" class="services-sub-headings">Rentals</a>
+                </li>
+                <li class="tab col s4 l4">
+                    <a href="#consultation" class="services-sub-headings">Consultation</a>
+                </li>
+            </ul>
+            <div class="col s12" id="builds">
+                <p class="flow-text services-focus-headings">BUILDS</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius asperiores assumenda ducimus maiores laudantium blanditiis maxime unde neque perferendis aspernatur!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius asperiores assumenda ducimus maiores laudantium blanditiis maxime unde neque perferendis aspernatur!</p>
+            </div>
+            <div class="col s12" id="rentals">
+                <p class="flow-text services-focus-headings">RENTALS</p>
+                <p>Eius asperiores assumenda ducimus maiores laudantium blanditiis maxime unde neque perferendis aspernatur! Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem explicabo accusantium magni molestias esse eligendi sit quae dolores maiores voluptate.</p>
+            </div>
+            <div class="col s12" id="consultation">
+                <p class="flow-text services-focus-headings">CONSULTATION</p>
+                <p>Eius asperiores assumenda ducimus maiores laudantium blanditiis maxime unde neque perferendis aspernatur! Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem explicabo accusantium magni molestias esse eligendi sit quae dolores maiores voluptate.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+   <!-- parallax -->
+   <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/geran-de-klerk-qzgN45hseN0-unsplash.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+  <!-- contact form -->
+    <section class="container section scrollspy" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="sub-headings">Get In Touch.</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab at illo saepe nihil aliquam maxime.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab at illo saepe nihil aliquam maxime.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab at illo saepe nihil aliquam maxime.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab at illo saepe nihil aliquam maxime.</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <br>
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix">person</i>
+                        <input type="text" id="name" required>
+                        <label for="name">Your name</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email" required>
+                        <label for="email">Your email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea name="" class="materialize-textarea" id="message"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <br>
+                    <div class="input-field">
+                        <p>Services required...</p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Build</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Rental</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Consultation</span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn waves-effect z-depth-1" style="margin-top: 12px;">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+  <!-- footer -->
+  <footer class="page-footer grey darken-2">
+      <div class="container">
+          <div class="row">
+              <div class="col s12 l6">
+                  <h5 class="additional-detail-headings">About Me</h5>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque blanditiis molestiae saepe! Aliquid, voluptates sequi.</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque blanditiis molestiae saepe! Aliquid, voluptates sequi.</p>
+              </div>
+              <div class="col s12 l4 offset-l2">
+                  <h5 class="additional-detail-headings">Connect</h5>
+                  <ul>
+                      <li><a href="https://www.instagram.com/the_rubbertramp_exp/?hl=en" target="_blank" class="grey-text text-lighten-3 social-links">Instagram</a></li>
+                      <li><a href="https://www.facebook.com/LawrenceCampers" target="_blank" class="grey-text text-lighten-3 social-links">Facebook</a></li>
+                      <li><a href="https://www.youtube.com/channel/UCiOnY29jMmVoDN9n-Jz1xUw" target="_blank" class="grey-text text-lighten-3 social-links">YouTube</a></li>
+                      <li><a href="https://www.etsy.com/uk/shop/lawrenceleathersco" target="_blank" class="grey-text text-lighten-3 social-links">Etsy</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+          <div class="container center-align">&copy; 2021 The RubberTramp Exp.</div>
+      </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.datepicker').datepicker({
+        });
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+    });
+    
+  </script>
+</body>
+</html>
