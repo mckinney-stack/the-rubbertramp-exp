@@ -90,8 +90,7 @@
         font-family: 'Lobster', cursive;
         position: relative;
         font-size: 88px;
-        top: 22px;
-        left: 9px;
+        bottom: 6px;
         color: rgb(87, 87, 87);
         text-shadow: 2px 2px rgba(255, 166, 0, 0.712);
       }
@@ -101,9 +100,9 @@
         padding-top: 0px;
         margin-top: 0px;
         position: relative;
-        top: 20px;
+        top: 28px;
         color: rgb(87, 87, 87);
-        font-size: 26px;
+        font-size: 43px;
         text-shadow: 1px 1px rgba(255, 166, 0, 0.712);
       }
 
@@ -111,8 +110,16 @@
         color: rgb(80, 80, 80);
         font-size: 22px;
         position: relative;
-        left: 2.7%;
-        bottom: 5px;
+        top: 0px;
+        letter-spacing: 0.07em;
+        font-family: 'Bebas Neue', cursive;
+      }
+
+      .slogan-text-small {
+        color: rgb(80, 80, 80);
+        font-size: 22px;
+        position: relative;
+        top: 24px;
         letter-spacing: 0.07em;
         font-family: 'Bebas Neue', cursive;
       }
@@ -182,11 +189,11 @@
           transition: all 0.4s ease;
         }
 
-
   </style>
 </head>
 
 <body style="background-color: rgb(255, 255, 251);">
+
 
   <!-- navbar -->
   <header>
@@ -195,10 +202,10 @@
             <a href="" class="sidenav-trigger" data-target="mobile-menu">
                 <i class="material-icons" style="color: rgb(219, 219, 219);">menu</i>
             </a>
-            <ul class="hide-on-med-and-down">
-                <li><a href="#photos" class="nav-headings">ABOUT</a></li>
-                <li><a href="#services" class="nav-headings">SERVICES</a></li>
-                <li><a href="#contact" class="nav-headings" style="margin-right: 10px;">CONTACT</a></li>
+            <ul class="hide-on-med-and-down center">
+                <li><a href="#photos" class="nav-headings center">ABOUT</a></li>
+                <li><a href="#services" class="nav-headings center">SERVICES</a></li>
+                <li><a href="#contact" class="nav-headings center" style="margin-right: 10px;">CONTACT</a></li>
                 <li><a href="https://www.instagram.com/the_rubbertramp_exp/?hl=en" target="_blank" class="tooltipped btn-floating btn-small teal darken-1 z-depth-0" data-tooltip="This is Instagram">
                     <i class="fab fa-instagram"></i>
                 </a></li>
@@ -212,7 +219,6 @@
                     <i class="fab fa-etsy"></i>
                 </a></li>
             </ul>
-            <h5 class="center hide-on-med-and-up small-title">The RubberTramp Exp.</h5>
             <ul class="sidenav grey lighten-2" id="mobile-menu">
                 <li><a href="#photos" class="sidenav-headings">ABOUT</a></li>
                 <li><a href="#services" class="sidenav-headings">SERVICES</a></li>
@@ -223,27 +229,47 @@
 
     <!-- MAIN HEADING -->
     <div class="container">
-        <h1 class="main-heading hide-on-small-only">The RubberTramp Exp.</h1>
-        <!-- SLOGAN -->
-        <p class="slogan-text">
+        <h1 class="main-heading hide-on-small-only center" id="main-heading">The RubberTramp Exp.</h1>
+        <!-- SMALL SCREEN HEADING -->
+        <h5 class="center hide-on-med-and-up small-title">The RubberTramp Exp.</h5>
+        <!-- LARGE-SCREEN SLOGAN -->
+        <p class="slogan-text hide-on-small-only center">
             <span style="font-size: 27px; letter-spacing: 0.08em; color: rgba(255, 166, 0, 0.712); text-shadow: 1px 1px rgba(255, 95, 47, 0.534);">Wagons</span>
             <span style="font-size: 19px; color: rgba(255, 166, 0, 0.712); text-shadow: 1px 1px rgba(255, 95, 47, 0.534);">with</span>
             <span style="color: rgba(255, 166, 0, 0.829); font-size: 27px; letter-spacing: 0.1em; text-shadow: 1px 1px rgba(255, 95, 47, 0.534);">soul...</span>
             <span style="font-size: 19px;"> from the </span>
             <span style="font-size: 26px; letter-spacing: 0.07em;">heart</span>
             <span style="font-size: 19px;"> of the </span>
-            <span style="font-size: 26px; letter-spacing: 0.08em;">North West.</span></p>
+            <span style="font-size: 26px; letter-spacing: 0.08em;">North.</span>
+        </p>
+        <!-- SMALL-SCREEN SLOGAN -->
+        <p class="slogan-text-small hide-on-med-and-up center">
+            <span style="font-size: 21px; letter-spacing: 0.11em; color: rgba(255, 166, 0, 0.842); text-shadow: 1px 1px rgba(255, 95, 47, 0.534);">Wagons</span>
+            <span style="font-size: 17px; letter-spacing: 0.07em; color: rgba(255, 166, 0, 0.712); text-shadow: 1px 1px rgba(255, 95, 47, 0.534);">with</span>
+            <span style="color: rgba(255, 166, 0, 0.829); font-size: 24px; letter-spacing: 0.1em; text-shadow: 1px 1px rgba(255, 95, 47, 0.534);">soul...</span>
+            <br>
+            <span style="position: relative; bottom: 12px;">
+                <span style="font-size: 14px;"> from the </span>
+                <span style="font-size: 19px; letter-spacing: 0.07em;">heart</span>
+                <span style="font-size: 14px;"> of the </span>
+                <span style="font-size: 20px; letter-spacing: 0.08em;">North.</span>
+            </span>
+        </p>
     </div>  
 
   </header>
 
-    <div style="background-color: rgb(212, 212, 212); padding-top: 24px; padding-bottom: 70px;">
+    <!-- EMBEDDED YOUTUBE VIDEO -->
+    <div class="hide-on-small-only" style="background-color: rgb(212, 212, 212); padding-top: 16px; padding-bottom: 60px;">
         <h5 style="text-align: center; font-family: 'Bebas Neue', cursive; font-size: 34px; color: teal; padding-bottom: 10px;">CHECK OUT MY LATEST BUILD...</h5>
-        <iframe class="z-depth-1" width="80%" height="75%" style="position: relative; margin: auto; text-align: center; display: block; border: 0.34em solid rgb(97, 97, 97); border-radius: 3px;" src="https://www.youtube.com/embed/N8hKBNT_1cA?modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container">
+            <iframe class="z-depth-1" width="80%" height="60%" style="position: relative; margin: auto; text-align: center; display: block; border: 0.34em solid rgb(97, 97, 97); border-radius: 3px;" src="https://www.youtube.com/embed/N8hKBNT_1cA?modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
 
   <!-- photo / grid -->
   <section class="container section scrollspy" id="photos">
+      <br class="hide-on-med-and-up">
       <h3 class="center sub-headings" style="bottom: 40px; padding-top: 14px;"> About. </h3>
       <div class="row">
           <div class="col s12 l5">
@@ -275,7 +301,7 @@
   </section>
 
   <!-- parallax -->
-  <div class="parallax-container">
+  <div class="parallax-container" id="parallax-1">
       <div class="parallax">
           <img src="img/connor-mollison-Ys1UeoLuxC0-unsplash (1).jpg" alt="" class="responsive-img materialboxed">
       </div>
@@ -295,7 +321,7 @@
                     <a href="#builds" class="services-sub-headings">Builds</a>
                 </li>
                 <li class="tab col s4 l4">
-                    <a href="#rentals" class="services-sub-headings">Rentals</a>
+                    <a href="#rentals" class="services-sub-headings" id="services-sub-headings-2">Rentals</a>
                 </li>
                 <li class="tab col s4 l4">
                     <a href="#consultation" class="services-sub-headings">Consultation</a>
@@ -321,7 +347,7 @@
   </section>
 
    <!-- parallax -->
-   <div class="parallax-container">
+   <div class="parallax-container" id="parallax-2">
         <div class="parallax">
             <img src="img/geran-de-klerk-qzgN45hseN0-unsplash.jpg" alt="" class="responsive-img">
         </div>
@@ -411,6 +437,7 @@
   </footer>
 
   <!-- Compiled and minified JavaScript -->
+  <script src="app.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script>
@@ -419,8 +446,6 @@
         $('.materialboxed').materialbox();
         $('.parallax').parallax();
         $('.tabs').tabs();
-        $('.datepicker').datepicker({
-        });
         $('.tooltipped').tooltip();
         $('.scrollspy').scrollSpy();
     });
